@@ -6,3 +6,6 @@ app = Flask(__name__)
 def holamundo():
     mensaje = {'mensaje': 'Hola Mundo desde Flask!'}
     return jsonify(mensaje)
+
+if __name__ == '__main__':
+    app.run(debug=True)
